@@ -1,0 +1,129 @@
+@font-face {
+    font-family: overpass;
+    src: url(./font/Overpass-VariableFont_wght.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(20, 21, 25);
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+#main,
+#submain {
+    width: 25%;
+    height: 50%;
+    place-self: center;
+    background-color: rgb(31, 38, 48);
+    border-radius: 1.3rem;
+    font-family: overpass;
+    font-weight: 400;
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
+#main>h2 {
+    color: rgb(240, 244, 244);
+}
+
+#main>p {
+    color: rgb(101, 107, 117);
+    font-size: 0.9rem;
+}
+
+img {
+    padding: 0.7em;
+    background-color: rgb(38, 47, 56);
+    border-radius: 1.3rem;
+}
+
+input[type="submit"] {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: overpass;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+    border: 0.1em solid black;
+    border-radius: 1.3rem;
+    background-color: hsl(25, 97%, 53%);
+    color: rgb(240, 244, 244);
+    width: 90%;
+    max-width: 300px;
+    height: 12%;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+label {
+    color: rgb(127, 136, 151);
+    font-size: small;
+    border-radius: 4rem;
+    padding: 0.625rem 0.9375rem;
+    background-color: rgb(38, 47, 56);
+    display: flex;
+}
+
+label:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+input[type="radio"]:checked+label {
+    background-color: rgb(124, 136, 152);
+    color: white;
+}
+
+.imgTy {
+    display: block;
+    text-align: center;
+}
+
+.imgTy>img {
+    background-color: rgb(31, 38, 48);
+}
+
+#submain>h2 {
+    color: rgb(240, 244, 244);
+    text-align: center;
+}
+
+#submain>p {
+    color: rgb(101, 107, 117);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#jsText {
+    background-color: rgb(38, 48, 57);
+    border-radius: 2rem;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#jsText>p {
+    color: rgb(161, 93, 45);
+    font-family: overpass;
+    font-size: small;
+    padding: 0.3125rem;
+}
